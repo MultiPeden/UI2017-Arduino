@@ -1,0 +1,13 @@
+Version 1.1 of touchpad code
+Changes since 1.0:
+-Each button now plays a sound for debugging purposes
+-Output format changed, check output section for details
+-If all buttons are pressed within 400 miliseconds, it will count as a "stop" and print out a stop value
+-All debug prints removed
+-Moved reset and print gesture to two different functions instead of one.
+-Sequences must be at least size 2 to be printed.
+
+Output format:
+SequenceGesture : {n1....nn}
+where nn is  1 < n < 5, and the numbers are not seperated by spaces
+Stop gesture: {9}
